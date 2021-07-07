@@ -1,0 +1,76 @@
+{
+    "version": 3,
+    "coins": [
+        {
+            "title": "Bitcoin",
+            "code": "BTC",
+            "decimal": 8,
+            "type": "bitcoin"
+        },
+        {
+            "title": "Litecoin",
+            "code": "LTC",
+            "decimal": 8,
+            "type": "litecoin"
+        },
+        {
+            "title": "Ethereum",
+            "code": "ETH",
+            "decimal": 18,
+            "type": "ethereum"
+        },
+        {
+            "title": "Tron",
+            "code": "TRX",
+            "decimal": 6,
+            "type": "tron"
+        },
+        {
+            "title": "Bitcoin Cash",
+            "code": "BCH",
+            "decimal": 8,
+            "type": "bitcoinCash"
+        },
+        {
+            "title": "Dash",
+            "code": "DASH",
+            "decimal": 8,
+            "type": "dash"
+        },
+        {
+            "title": "Binance Chain",
+            "code": "BNB",
+            "decimal": 8,
+            "type": "bep2",
+            "symbol": "BNB"
+        },
+        {
+            "title": "Zcash",
+            "code": "ZEC",
+            "decimal": 8,
+            "type": "zcash"
+        },
+        {
+            "title": "Dai",
+            "code": "DAI",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xad6d458402f60fd3bd25163575031acdce07538d"
+        },
+        {
+            "title": "WEENUS",
+            "code": "WEENUS",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x101848d5c5bbca18e6b4431eedf6b95e9adf82fa"
+        },
+        {
+            "title": "Tether USD",
+            "code": "USDT",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+        }
+    ]
+}
+

@@ -1,0 +1,235 @@
+{
+    "version": 13,
+    "coins": [
+        {
+            "title": "Bitcoin",
+            "code": "BTC",
+            "decimal": 8,
+            "type": "bitcoin"
+        },
+        {
+            "title": "Litecoin",
+            "code": "LTC",
+            "decimal": 8,
+            "type": "litecoin"
+        },
+        {
+            "title": "Ethereum",
+            "code": "ETH",
+            "decimal": 18,
+            "type": "ethereum"
+        },
+        {
+            "title": "Tron",
+            "code": "TRX",
+            "decimal": 6,
+            "type": "tron"
+        },
+        {
+            "title": "Bitcoin Cash",
+            "code": "BCH",
+            "decimal": 8,
+            "type": "bitcoinCash"
+        },
+        {
+            "title": "Dash",
+            "code": "DASH",
+            "decimal": 8,
+            "type": "dash"
+        },
+        {
+            "title": "Binance Smart Chain",
+            "code": "BNB",
+            "decimal": 18,
+            "type": "binanceSmartChain"
+        },
+        {
+            "title": "Binance Coin",
+            "code": "BNB",
+            "decimal": 8,
+            "type": "bep2",
+            "symbol": "BNB"
+        },
+        {
+            "title": "Zcash",
+            "code": "ZEC",
+            "decimal": 8,
+            "type": "zcash"
+        },
+        {
+            "title": "1INCH Token",
+            "code": "1INCH",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x111111111117dc0aa78b770fa6a738034120c302"
+        },
+        {
+            "title": "Aave",
+            "code": "AAVE",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9"
+        },
+        {
+            "title": "Balancer",
+            "code": "BAL",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xba100000625a3754423978a60c9317c58a424e3d"
+        },
+        {
+            "title": "Chainlink",
+            "code": "LINK",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x514910771af9ca656af840dff83e8264ecf986ca"
+        },
+        {
+            "title": "Compound",
+            "code": "COMP",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xc00e94cb662c3520282e6f5717214004a7f26888"
+        },
+        {
+            "title": "Curve DAO Token",
+            "code": "CRV",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xd533a949740bb3306d119cc777fa900ba034cd52"
+        },
+        {
+            "title": "Maker",
+            "code": "MKR",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"
+        },
+        {
+            "title": "Synthetix",
+            "code": "SNX",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f"
+        },
+        {
+            "title": "Tether USD",
+            "code": "USDT",
+            "decimal": 6,
+            "type": "erc20",
+            "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        {
+            "title": "Uniswap",
+            "code": "UNI",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+        },
+        {
+            "title": "USD Coin",
+            "code": "USDC",
+            "decimal": 6,
+            "type": "erc20",
+            "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        },
+        {
+            "title": "yearn.finance",
+            "code": "YFI",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e"
+        },
+        {
+            "title": "Crypto.com Coin",
+            "code": "CRO",
+            "decimal": 8,
+            "type": "erc20",
+            "address": "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b"
+        },
+        {
+            "title": "Sushi",
+            "code": "SUSHI",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2"
+        },
+        {
+            "title": "PancakeSwap",
+            "code": "CAKE",
+            "decimal": 18,
+            "type": "bep20",
+            "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+        },
+        {
+            "title": "FTX Token",
+            "code": "FTT",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9"
+        },
+        {
+            "title": "Huobi Token",
+            "code": "HT",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161"
+        },
+        {
+            "title": "KuCoin Token",
+            "code": "KCS",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xf34960d9d60be18cc1d5afc1a6f012a723a28811"
+        },
+        {
+            "title": "sUSD",
+            "code": "SUSD",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x57ab1ec28d129707052df4df418d58a2d46d5f51"
+        },
+        {
+            "title": "Dai",
+            "code": "DAI",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x6b175474e89094c44da98b954eedeac495271d0f"
+        },
+        {
+            "title": "Wrapped Bitcoin",
+            "code": "WBTC",
+            "decimal": 8,
+            "type": "erc20",
+            "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+        },
+        {
+            "title": "renBTC",
+            "code": "renBTC",
+            "decimal": 8,
+            "type": "erc20",
+            "address": "0xeb4c2781e4eba804ce9a9803c67d0893436bb27d"
+        },
+        {
+            "title": "sBTC",
+            "code": "sBTC",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6"
+        },
+        {
+            "title": "Mirror Protocol",
+            "code": "MIR",
+            "decimal": 18,
+            "type": "erc20",
+            "address": "0x09a3ecafa817268f77be1283176b946c4ff2e608"
+        },
+        {
+            "title": "Tether USD",
+            "code": "USDT",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+        }
+    ]
+}
