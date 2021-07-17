@@ -70,6 +70,13 @@
             "decimal": 6,
             "type": "trc20",
             "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+        },
+        {
+            "title": "AEST",
+            "code": "AEST",
+            "decimal": 6,
+            "type": "erc20",
+            "address": "0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a0"
         }
     ]
 }
