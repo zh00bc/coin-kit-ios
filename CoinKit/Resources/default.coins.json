@@ -230,6 +230,62 @@
             "decimal": 6,
             "type": "trc20",
             "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
-        }
+        },
+        {
+            "title": "Wrapped TRX",
+            "code": "WTRX",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR"
+        },
+        {
+            "title": "WINkLink",
+            "code": "WIN",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7"
+        },
+        {
+            "title": "JUST",
+            "code": "JST",
+            "decimal": 18,
+            "type": "trc20",
+            "address": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9"
+        },
+        {
+            "title": "Wrapped BTT",
+            "code": "WBTT",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TKfjV9RNKJJCqPvBtK8L7Knykh7DNWvnYt"
+        },
+        {
+            "title": "SUNOLD",
+            "code": "SUN",
+            "decimal": 18,
+            "type": "trc20",
+            "address": "TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9"
+        },
+        {
+            "title": "JUST Stablecoin",
+            "code": "USDJ",
+            "decimal": 18,
+            "type": "trc20",
+            "address": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT"
+        },
+        {
+            "title": "APENFT",
+            "code": "NFT",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TFczxzPhnThNSqr5by8tvxsdCFRRz6cPNq"
+        },
+        {
+            "title": "Filecoin Community Token",
+            "code": "FC",
+            "decimal": 6,
+            "type": "trc20",
+            "address": "TKzf6cF5RsxzV7Shcf8MpuRRJcfDiG1hDn"
+        },
     ]
 }
