@@ -77,7 +77,47 @@
             "decimal": 6,
             "type": "erc20",
             "address": "0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a0"
+        },
+        {
+            "title": "DH",
+            "code": "DH",
+            "decimal": 8,
+            "type": "dh",
+        },
+        {
+            "title": "Bitcoin",
+            "code": "BTC",
+            "decimal": 8,
+            "type": "drc20",
+            "address": "tl3gVV6FjdreZCYXFkrFQFCz9uc1ggko8d6"
+        },
+        {
+            "title": "Ethereum",
+            "code": "ETH",
+            "decimal": 18,
+            "type": "drc20",
+            "address": "tlkXp5Sqj7tNFtUdruSwmWP4VU8N6ugHQH"
+        },
+        {
+            "title": "Tron",
+            "code": "TRX",
+            "decimal": 6,
+            "type": "drc20",
+            "address": "tlMNHMvcmnYqwctRmhFSX8TRo7vg1G6G9c6"
+        },
+        {
+            "title": "USDT-TRC20",
+            "code": "USDT-TRC20",
+            "decimal": 6,
+            "type": "drc20",
+            "address": "tlK3ybD2Dezk6QLbtsRhjRB9uy3XXCEPwb1"
+        },
+        {
+            "title": "USDT-ERC20",
+            "code": "USDT-ERC20",
+            "decimal": 6,
+            "type": "drc20",
+            "address": "tlHhyXVGF43hqdyo1SCU1wWRdDtXXeFuJhu"
         }
     ]
 }
-

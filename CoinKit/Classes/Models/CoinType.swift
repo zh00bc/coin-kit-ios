@@ -5,10 +5,12 @@ public enum CoinType {
     case dash
     case ethereum
     case tron
+    case dh
     case zcash
     case binanceSmartChain
     case erc20(address: String)
     case trc20(address: String)
+    case drc20(address: String)
     case bep2(symbol: String)
     case bep20(address: String)
     case unsupported(id: String)
@@ -25,11 +27,14 @@ extension CoinType: Equatable {
         case (.dash, .dash): return true
         case (.ethereum, .ethereum): return true
         case (.tron, .tron): return true
+        case (.dh, .dh): return true
         case (.zcash, .zcash): return true
         case (.binanceSmartChain, .binanceSmartChain): return true
         case (.erc20(let lhsAddress), .erc20(let rhsAddress)):
             return lhsAddress.lowercased() == rhsAddress.lowercased()
         case (.trc20(let lhsAddress), .trc20(let rhsAddress)):
+            return lhsAddress.lowercased() == rhsAddress.lowercased()
+        case (.drc20(let lhsAddress), .drc20(let rhsAddress)):
             return lhsAddress.lowercased() == rhsAddress.lowercased()
         case (.bep2(let lhsSymbol), .bep2(let rhsSymbol)):
             return lhsSymbol == rhsSymbol
@@ -66,6 +71,7 @@ extension CoinType: Identifiable {
             case "dash": self = .dash
             case "ethereum": self = .ethereum
             case "tron": self = .tron
+            case "dh": self = .dh
             case "zcash": self = .zcash
             case "binanceSmartChain": self = .binanceSmartChain
             default: self = .unsupported(id: String(chunks[0]))
@@ -74,6 +80,7 @@ extension CoinType: Identifiable {
             switch chunks[0] {
             case "erc20": self = .erc20(address: String(chunks[1]))
             case "trc20": self = .trc20(address: String(chunks[1]))
+            case "drc20": self = .drc20(address: String(chunks[1]))
             case "bep2": self = .bep2(symbol: String(chunks[1]))
             case "bep20": self = .bep20(address: String(chunks[1]))
             case "unsupported": self = .unsupported(id: chunks.suffix(from: 1).joined(separator: "|"))
@@ -91,8 +98,10 @@ extension CoinType: Identifiable {
         case .ethereum: return "ethereum"
         case .zcash: return "zcash"
         case .tron: return "tron"
+        case .dh: return "dh"
         case .erc20(let address): return ["erc20", address].joined(separator: "|")
         case .trc20(let address): return ["trc20", address].joined(separator: "|")
+        case .drc20(let address): return ["drc20", address].joined(separator: "|")
         case .binanceSmartChain: return "binanceSmartChain"
         case .bep2(let symbol): return ["bep2", symbol].joined(separator: "|")
         case .bep20(let address): return ["bep20", address].joined(separator: "|")
