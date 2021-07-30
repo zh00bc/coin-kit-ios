@@ -286,6 +286,54 @@
             "decimal": 6,
             "type": "trc20",
             "address": "TKzf6cF5RsxzV7Shcf8MpuRRJcfDiG1hDn"
+        },
+        {
+            "title": "DH",
+            "code": "DH",
+            "decimal": 8,
+            "type": "dh",
+        },
+        {
+            "title": "Bitcoin",
+            "code": "BTC",
+            "decimal": 8,
+            "type": "drc20",
+            "address": "tl6WDMT9QtME42F6GJvPK5hsctvXd7qbyDr"
+        },
+        {
+            "title": "Ethereum",
+            "code": "ETH",
+            "decimal": 18,
+            "type": "drc20",
+            "address": "tlNsTUSBvceBdoMJX93fyPmxo2y1JtCATyi"
+        },
+        {
+            "title": "Tron",
+            "code": "TRX",
+            "decimal": 6,
+            "type": "drc20",
+            "address": "tl6CSi5FWqNbZ11LsCyPUfvPYfGNi5FeMsp"
+        },
+        {
+            "title": "USDT-TRC20",
+            "code": "USDT-TRC20",
+            "decimal": 6,
+            "type": "drc20",
+            "address": "tlExYnq8mzNmXD9jWqVTWo25s3bAepg1DjF"
+        },
+        {
+            "title": "USDT-ERC20",
+            "code": "USDT-ERC20",
+            "decimal": 6,
+            "type": "drc20",
+            "address": "tlD4py6fdofjErZJQdoLk8ws9ZPKLsRVeca"
+        },
+        {
+            "title": "Litecoin",
+            "code": "LTC",
+            "decimal": 8,
+            "type": "drc20",
+            "address": "tlDaSi5DCh3xD5UusAgcRcXcGA2aQd7xykR"
         }
     ]
 }

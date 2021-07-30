@@ -118,6 +118,13 @@
             "decimal": 6,
             "type": "drc20",
             "address": "tlHhyXVGF43hqdyo1SCU1wWRdDtXXeFuJhu"
+        },
+        {
+            "title": "Litecoin",
+            "code": "LTC",
+            "decimal": 8,
+            "type": "drc20",
+            "address": "tlDaSi5DCh3xD5UusAgcRcXcGA2aQd7xykR"
         }
     ]
 }
