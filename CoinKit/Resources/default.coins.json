@@ -316,14 +316,14 @@
         },
         {
             "title": "USDT-TRC20",
-            "code": "USDT-TRC20",
+            "code": "USDT",
             "decimal": 6,
             "type": "drc20",
             "address": "tlExYnq8mzNmXD9jWqVTWo25s3bAepg1DjF"
         },
         {
             "title": "USDT-ERC20",
-            "code": "USDT-ERC20",
+            "code": "USDT",
             "decimal": 6,
             "type": "drc20",
             "address": "tlD4py6fdofjErZJQdoLk8ws9ZPKLsRVeca"
