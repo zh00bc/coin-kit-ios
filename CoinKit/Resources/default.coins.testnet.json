@@ -68,6 +68,13 @@
             "title": "Tether USD",
             "code": "USDT",
             "decimal": 6,
+            "type": "erc20",
+            "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        {
+            "title": "Tether USD",
+            "code": "USDT",
+            "decimal": 6,
             "type": "trc20",
             "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
         },
