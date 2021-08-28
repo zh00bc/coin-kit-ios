@@ -95,35 +95,35 @@
             "title": "Bitcoin",
             "code": "BTC",
             "decimal": 8,
-            "type": "drc20",
+            "type": "tlc20",
             "address": "tl3gVV6FjdreZCYXFkrFQFCz9uc1ggko8d6"
         },
         {
             "title": "Ethereum",
             "code": "ETH",
             "decimal": 18,
-            "type": "drc20",
+            "type": "tlc20",
             "address": "tl4YC36wd2cTN6KGA84PzMHPbNsbXxuDW2Z"
         },
         {
             "title": "Tron",
             "code": "TRX",
             "decimal": 6,
-            "type": "drc20",
+            "type": "tlc20",
             "address": "tlMNHMvcmnYqwctRmhFSX8TRo7vg1G6G9c6"
         },
         {
             "title": "USDT-TRC20",
             "code": "USDT",
             "decimal": 6,
-            "type": "drc20",
+            "type": "tlc20",
             "address": "tlK3ybD2Dezk6QLbtsRhjRB9uy3XXCEPwb1"
         },
         {
             "title": "USDT-ERC20",
             "code": "USDT",
             "decimal": 6,
-            "type": "drc20",
+            "type": "tlc20",
             "address": "tlHhyXVGF43hqdyo1SCU1wWRdDtXXeFuJhu"
         }
     ]
