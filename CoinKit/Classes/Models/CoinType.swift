@@ -5,7 +5,7 @@ public enum CoinType {
     case dash
     case ethereum
     case tron
-    case dh
+    case tl
     case zcash
     case binanceSmartChain
     case erc20(address: String)
@@ -27,7 +27,7 @@ extension CoinType: Equatable {
         case (.dash, .dash): return true
         case (.ethereum, .ethereum): return true
         case (.tron, .tron): return true
-        case (.dh, .dh): return true
+        case (.tl, .tl): return true
         case (.zcash, .zcash): return true
         case (.binanceSmartChain, .binanceSmartChain): return true
         case (.erc20(let lhsAddress), .erc20(let rhsAddress)):
@@ -71,7 +71,7 @@ extension CoinType: Identifiable {
             case "dash": self = .dash
             case "ethereum": self = .ethereum
             case "tron": self = .tron
-            case "dh": self = .dh
+            case "tl": self = .tl
             case "zcash": self = .zcash
             case "binanceSmartChain": self = .binanceSmartChain
             default: self = .unsupported(id: String(chunks[0]))
@@ -98,7 +98,7 @@ extension CoinType: Identifiable {
         case .ethereum: return "ethereum"
         case .zcash: return "zcash"
         case .tron: return "tron"
-        case .dh: return "dh"
+        case .tl: return "tl"
         case .erc20(let address): return ["erc20", address].joined(separator: "|")
         case .trc20(let address): return ["trc20", address].joined(separator: "|")
         case .drc20(let address): return ["drc20", address].joined(separator: "|")

@@ -288,10 +288,10 @@
             "address": "TKzf6cF5RsxzV7Shcf8MpuRRJcfDiG1hDn"
         },
         {
-            "title": "DH",
-            "code": "DH",
+            "title": "TaylorChain",
+            "code": "TL",
             "decimal": 8,
-            "type": "dh",
+            "type": "tl",
         },
         {
             "title": "Bitcoin",

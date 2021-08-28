@@ -86,10 +86,10 @@
             "address": "0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a0"
         },
         {
-            "title": "DH",
-            "code": "DH",
+            "title": "TaylorChain",
+            "code": "TL",
             "decimal": 8,
-            "type": "dh",
+            "type": "tl",
         },
         {
             "title": "Bitcoin",
