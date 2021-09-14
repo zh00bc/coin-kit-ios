@@ -17,7 +17,7 @@ public class Coin: Record, ImmutableMappable {
         "coins"
     }
 
-    public init(title: String, code: String, decimal: Int, type: CoinType, mainId: String) {
+    public init(title: String, code: String, decimal: Int, type: CoinType, mainId: String? = nil) {
         self.title = title
         self.code = code
         self.decimal = decimal
