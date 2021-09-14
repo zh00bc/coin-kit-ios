@@ -33,6 +33,7 @@ class GrdbStorage {
                 t.column(Coin.Columns.title.name, .text).notNull()
                 t.column(Coin.Columns.code.name, .text).notNull()
                 t.column(Coin.Columns.decimal.name, .integer).notNull()
+                t.column(Coin.Columns.mainId.name, .text)
 
                 t.primaryKey([Coin.Columns.id.name], onConflict: .replace)
             }

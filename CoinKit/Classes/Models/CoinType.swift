@@ -108,5 +108,4 @@ extension CoinType: Identifiable {
         case .unsupported(let id): return ["unsupported", id].joined(separator: "|")
         }
     }
-
 }

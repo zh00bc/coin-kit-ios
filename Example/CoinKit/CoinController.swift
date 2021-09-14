@@ -41,7 +41,7 @@ class CoinController: UIViewController {
     }
 
     private func initCoins() {
-        coins = Array(coinKit.coins.prefix(20))
+        coins = Array(coinKit.coins.prefix(100))
 
         tableView.reloadData()
     }

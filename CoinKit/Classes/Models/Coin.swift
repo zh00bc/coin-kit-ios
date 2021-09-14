@@ -6,6 +6,8 @@ public class Coin: Record, ImmutableMappable {
     public let code: String
     public let decimal: Int
     public let type: CoinType
+    /// tlc20 对应的公链币
+    public let mainId: String?
 
     public var id: String {
         type.id
@@ -15,11 +17,12 @@ public class Coin: Record, ImmutableMappable {
         "coins"
     }
 
-    public init(title: String, code: String, decimal: Int, type: CoinType) {
+    public init(title: String, code: String, decimal: Int, type: CoinType, chainId: String) {
         self.title = title
         self.code = code
         self.decimal = decimal
         self.type = type
+        self.mainId = chainId
 
         super.init()
     }
@@ -28,6 +31,7 @@ public class Coin: Record, ImmutableMappable {
         title = try map.value("title")
         code = try map.value("code")
         decimal = try map.value("decimal")
+        mainId = try map.value("mainId")
 
         let type: String = try map.value("type")
         let typeExtension: String? = (try? map.value("address")) ?? (try? map.value("symbol"))
@@ -44,6 +48,7 @@ public class Coin: Record, ImmutableMappable {
         case title
         case code
         case decimal
+        case mainId
     }
 
     required init(row: Row) {
@@ -51,6 +56,7 @@ public class Coin: Record, ImmutableMappable {
         code = row[Columns.code]
         decimal = row[Columns.decimal]
         type = CoinType(id: row[Columns.id])
+        mainId = row[Columns.mainId]
 
         super.init(row: row)
     }
@@ -60,6 +66,7 @@ public class Coin: Record, ImmutableMappable {
         container[Columns.code] = code
         container[Columns.decimal] = decimal
         container[Columns.id] = id
+        container[Columns.mainId] = mainId
     }
 
 }
@@ -85,5 +92,4 @@ extension Coin: Comparable {
     public static func <(lhs: Coin, rhs: Coin) -> Bool {
         lhs.title < rhs.title
     }
-
 }
