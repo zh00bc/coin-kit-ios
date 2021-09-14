@@ -17,12 +17,12 @@ public class Coin: Record, ImmutableMappable {
         "coins"
     }
 
-    public init(title: String, code: String, decimal: Int, type: CoinType, chainId: String) {
+    public init(title: String, code: String, decimal: Int, type: CoinType, mainId: String) {
         self.title = title
         self.code = code
         self.decimal = decimal
         self.type = type
-        self.mainId = chainId
+        self.mainId = mainId
 
         super.init()
     }
