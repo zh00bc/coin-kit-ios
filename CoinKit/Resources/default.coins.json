@@ -330,7 +330,7 @@
             "decimal": 6,
             "type": "tlc20",
             "address": "tlK3ybD2Dezk6QLbtsRhjRB9uy3XXCEPwb1",
-            "mainId": "trc|TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+            "mainId": "trc20|TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
         },
         {
             "title": "USDT-ERC20",
