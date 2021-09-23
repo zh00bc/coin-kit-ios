@@ -8,6 +8,7 @@ public enum CoinType {
     case tl
     case zcash
     case binanceSmartChain
+    case omni(address: String)
     case erc20(address: String)
     case trc20(address: String)
     case tlc20(address: String)
@@ -30,6 +31,8 @@ extension CoinType: Equatable {
         case (.tl, .tl): return true
         case (.zcash, .zcash): return true
         case (.binanceSmartChain, .binanceSmartChain): return true
+        case (.omni(let lhsAddress), .omni(let rhsAddress)):
+            return lhsAddress.lowercased() == rhsAddress.lowercased()
         case (.erc20(let lhsAddress), .erc20(let rhsAddress)):
             return lhsAddress.lowercased() == rhsAddress.lowercased()
         case (.trc20(let lhsAddress), .trc20(let rhsAddress)):
@@ -83,6 +86,7 @@ extension CoinType: Identifiable {
             case "tlc20": self = .tlc20(address: String(chunks[1]))
             case "bep2": self = .bep2(symbol: String(chunks[1]))
             case "bep20": self = .bep20(address: String(chunks[1]))
+            case "omni": self = .omni(address: String(chunks[1]))
             case "unsupported": self = .unsupported(id: chunks.suffix(from: 1).joined(separator: "|"))
             default: self = .unsupported(id: chunks.joined(separator: "|"))
             }
@@ -102,6 +106,7 @@ extension CoinType: Identifiable {
         case .erc20(let address): return ["erc20", address].joined(separator: "|")
         case .trc20(let address): return ["trc20", address].joined(separator: "|")
         case .tlc20(let address): return ["tlc20", address].joined(separator: "|")
+        case .omni(let address): return ["omni", address].joined(separator: "|")
         case .binanceSmartChain: return "binanceSmartChain"
         case .bep2(let symbol): return ["bep2", symbol].joined(separator: "|")
         case .bep20(let address): return ["bep20", address].joined(separator: "|")

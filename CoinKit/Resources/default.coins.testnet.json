@@ -8,6 +8,13 @@
             "type": "bitcoin"
         },
         {
+            "title": "USDT-OMNI",
+            "code": "USDT",
+            "decimal": 6,
+            "type": "omni",
+            "address": "31"
+        },
+        {
             "title": "Litecoin",
             "code": "LTC",
             "decimal": 8,
