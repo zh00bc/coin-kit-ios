@@ -103,7 +103,7 @@
             "code": "BTC",
             "decimal": 8,
             "type": "tlc20",
-            "address": "tl3gVV6FjdreZCYXFkrFQFCz9uc1ggko8d6",
+            "address": "tlJrFSaa7D2XRBrc4eReCojDKdVH2E6SmikuGm8Jy7S",
             "mainId": "bitcoin"
         },
         {
@@ -111,7 +111,7 @@
             "code": "ETH",
             "decimal": 18,
             "type": "tlc20",
-            "address": "tl4YC36wd2cTN6KGA84PzMHPbNsbXxuDW2Z",
+            "address": "tlmXFusepzX8BborJmNmoXF5pgDD8bRuuTNzLCXdtq8",
             "mainId": "ethereum"
         },
         {
@@ -119,7 +119,7 @@
             "code": "TRX",
             "decimal": 6,
             "type": "tlc20",
-            "address": "tlMNHMvcmnYqwctRmhFSX8TRo7vg1G6G9c6",
+            "address": "tlnQz7jwcoTdCboxpvGvo1SEUm2hqSWU8GdgKQ1KdzM",
             "mainId": "tron"
         },
         {
@@ -127,7 +127,7 @@
             "code": "USDT",
             "decimal": 6,
             "type": "tlc20",
-            "address": "tlK3ybD2Dezk6QLbtsRhjRB9uy3XXCEPwb1",
+            "address": "tlMvYb4PnNMLmo7MMDAKY2QbY4wujz37ZJxTVbSRia8",
             "mainId": "trc20|TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
         },
         {
@@ -135,7 +135,7 @@
             "code": "USDT",
             "decimal": 6,
             "type": "tlc20",
-            "address": "tlHhyXVGF43hqdyo1SCU1wWRdDtXXeFuJhu",
+            "address": "tlEX27npCqTVUEFY5wCxx1FfDPTzzoyP1p66nLToRdB",
             "mainId": "erc20|0xdac17f958d2ee523a2206206994597c13d831ec7"
         }
     ]
