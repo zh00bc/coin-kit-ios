@@ -137,6 +137,14 @@
             "type": "tlc20",
             "address": "tlEX27npCqTVUEFY5wCxx1FfDPTzzoyP1p66nLToRdB",
             "mainId": "erc20|0xdac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        {
+            "title": "Litecoin",
+            "code": "LTC",
+            "decimal": 8,
+            "type": "tlc20",
+            "address": "tlUdTCiN99kAx2w8Cdtsrf1FzDYhqizM38MoH6wkvv5",
+            "mainId": "litecoin"
         }
     ]
 }
