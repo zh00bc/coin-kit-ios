@@ -76,21 +76,21 @@
             "code": "USDT",
             "decimal": 6,
             "type": "erc20",
-            "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+            "address": "0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a0"
         },
         {
             "title": "Tether USD",
             "code": "USDT",
             "decimal": 6,
             "type": "trc20",
-            "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+            "address": "TMknaqHwEvGiuF3eB9vyGhZrrYKxoDPA6R"
         },
         {
             "title": "AEST",
             "code": "AEST",
             "decimal": 6,
             "type": "erc20",
-            "address": "0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a0"
+            "address": "0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a1"
         },
         {
             "title": "Taylor",
@@ -128,7 +128,7 @@
             "decimal": 6,
             "type": "tlc20",
             "address": "0tMvYb4PnNMLmo7MMDAKY2QbY4wujz37ZJxTVbSRia8",
-            "mainId": "trc20|TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+            "mainId": "trc20|TMknaqHwEvGiuF3eB9vyGhZrrYKxoDPA6R"
         },
         {
             "title": "USDT-ERC20",
@@ -136,7 +136,7 @@
             "decimal": 6,
             "type": "tlc20",
             "address": "0tEX27npCqTVUEFY5wCxx1FfDPTzzoyP1p66nLToRdB",
-            "mainId": "erc20|0xdac17f958d2ee523a2206206994597c13d831ec7"
+            "mainId": "erc20|0x0960524ded80ab5a1d3c64ae8d01e7f2b94266a0"
         },
         {
             "title": "Litecoin",
