@@ -11,11 +11,11 @@ class CoinManager {
         
         self.storage = storage
 
-//        do {
-//            try updateDefaultCoins()
-//        } catch {
-//            print(error.localizedDescription)
-//        }
+        do {
+            try updateDefaultCoins()
+        } catch {
+            print(error.localizedDescription)
+        }
         
         do {
             try updateDefaultMappings()

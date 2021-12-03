@@ -42,7 +42,7 @@ class GrdbStorage {
         migrator.registerMigration("createMappings") { db in
             try db.create(table: CoinMapping.databaseTableName, body: { t in
                 t.column(CoinMapping.Columns.coinId.name, .text).notNull()
-                t.column(CoinMapping.Columns.coinType.name, .text).notNull()
+                t.column(CoinMapping.Columns.name.name, .text).notNull()
                 t.column(CoinMapping.Columns.chainType.name, .text).notNull()
                 t.column(CoinMapping.Columns.mirrorCoinId.name, .text)
                 t.column(CoinMapping.Columns.taylorContractAddress.name, .text)

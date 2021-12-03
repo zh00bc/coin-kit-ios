@@ -12,16 +12,16 @@ import GRDB
 public class CoinMapping: Record, ImmutableMappable {
 
     public let coinId: String
-    public let coinType: String
+    public let name: String
     public let chainType: String
     public let mirrorCoinId: String?
     public let taylorContractAddress: String
     public let crossRegion: Bool
     public let crossChain: Bool
 
-    public init(coinId: String, coinType: String, chainType: String, mirrorCoinId: String?, taylorContractAddress: String, crossRegion: Bool, crossChain: Bool) {
+    public init(coinId: String, name: String, chainType: String, mirrorCoinId: String?, taylorContractAddress: String, crossRegion: Bool, crossChain: Bool) {
         self.coinId = coinId
-        self.coinType = coinType
+        self.name = name
         self.chainType = chainType
         self.mirrorCoinId = mirrorCoinId
         self.taylorContractAddress = taylorContractAddress
@@ -36,12 +36,12 @@ public class CoinMapping: Record, ImmutableMappable {
     }
 
     enum Columns: String, ColumnExpression {
-        case coinId, coinType, chainType, mirrorCoinId, taylorContractAddress, crossRegion, crossChain
+        case coinId, name, chainType, mirrorCoinId, taylorContractAddress, crossRegion, crossChain
     }
 
     required init(row: Row) {
         coinId = row[Columns.coinId]
-        coinType = row[Columns.coinType]
+        name = row[Columns.name]
         chainType = row[Columns.chainType]
         mirrorCoinId = row[Columns.mirrorCoinId]
         taylorContractAddress = row[Columns.taylorContractAddress]
@@ -53,7 +53,7 @@ public class CoinMapping: Record, ImmutableMappable {
     
     required public init(map: Map) throws {
         coinId = try map.value("coinId")
-        coinType = try map.value("coinType")
+        name = try map.value("name")
         chainType = try map.value("chainType")
         mirrorCoinId = try map.value("mirrorCoinId")
         taylorContractAddress = try map.value("taylorContractAddress")
@@ -65,7 +65,7 @@ public class CoinMapping: Record, ImmutableMappable {
 
     public override func encode(to container: inout PersistenceContainer) {
         container[Columns.coinId] = coinId
-        container[Columns.coinType] = coinType
+        container[Columns.name] = name
         container[Columns.chainType] = chainType
         container[Columns.mirrorCoinId] = mirrorCoinId
         container[Columns.taylorContractAddress] = taylorContractAddress

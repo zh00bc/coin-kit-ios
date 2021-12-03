@@ -4,7 +4,7 @@
         {
             "chainType":"tl",
             "mirrorCoinId":"47c50958043c4fb4b8dcc776c3718b5b",
-            "coinType":"TL",
+            "name":"TL",
             "coinId":"tl",
             "taylorContractAddress":"0tk4QtU4t3fSZ4YdmXHziVMV5B91tTNfG8CuA4ViyBq",
             "crossRegion": true,
@@ -13,7 +13,7 @@
         {
             "chainType":"eth",
             "mirrorCoinId":"7f791dbe18690c0173ea2ef02a599345",
-            "coinType":"USDT-ERC20",
+            "name":"USDT-ERC20",
             "coinId":"erc20|0xdac17f958d2ee523a2206206994597c13d831ec7",
             "taylorContractAddress":"0tEX27npCqTVUEFY5wCxx1FfDPTzzoyP1p66nLToRdB",
             "crossRegion": true,
@@ -22,7 +22,7 @@
         {
             "chainType":"tron",
             "mirrorCoinId":"d68a9e72585b3b4e560b7821d43a41f9",
-            "coinType":"USDT-TRC20",
+            "name":"USDT-TRC20",
             "coinId":"trc20|TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
             "taylorContractAddress":"0tMvYb4PnNMLmo7MMDAKY2QbY4wujz37ZJxTVbSRia8",
             "crossRegion": true,
@@ -31,7 +31,7 @@
         {
             "chainType":"btc",
             "mirrorCoinId":"8cd7f91f34204c13828d28a71777ad39",
-            "coinType":"BTC",
+            "name":"BTC",
             "coinId":"bitcoin",
             "taylorContractAddress":"0tJrFSaa7D2XRBrc4eReCojDKdVH2E6SmikuGm8Jy7S",
             "crossRegion": true,
@@ -40,7 +40,7 @@
         {
             "chainType":"eth",
             "mirrorCoinId":"12bdff663f854d17a8f8c791f033bce1",
-            "coinType":"ETH",
+            "name":"ETH",
             "coinId":"ethereum",
             "taylorContractAddress":"0tmXFusepzX8BborJmNmoXF5pgDD8bRuuTNzLCXdtq8",
             "crossRegion": true,
@@ -49,7 +49,7 @@
         {
             "chainType":"ltc",
             "mirrorCoinId":"38aa81ae2d0c4160b7108d63b2a59f85",
-            "coinType":"LTC",
+            "name":"LTC",
             "coinId":"litecoin",
             "taylorContractAddress":"0tUdTCiN99kAx2w8Cdtsrf1FzDYhqizM38MoH6wkvv5",
             "crossRegion": true,
@@ -58,7 +58,7 @@
         {
             "chainType":"tron",
             "mirrorCoinId":"44a59ae03486468680b15da5812abd5d",
-            "coinType":"TRX",
+            "name":"TRX",
             "coinId":"tron",
             "taylorContractAddress":"0tnQz7jwcoTdCboxpvGvo1SEUm2hqSWU8GdgKQ1KdzM",
             "crossRegion": true,

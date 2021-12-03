@@ -87,7 +87,7 @@ extension CoinController: UITableViewDataSource, UITableViewDelegate {
             cell.bottomTitle = coin.code
         } else {
             let mapping = mappings[indexPath.row]
-            cell.topTitle = mapping.coinType
+            cell.topTitle = mapping.name
             cell.middleTitle = mapping.mirrorCoinId
             cell.bottomTitle = mapping.coinId
         }
