@@ -3,15 +3,23 @@ import SnapKit
 import RxSwift
 import CoinKit
 
+enum DataType {
+    case coins
+    case mappings
+}
+
 class CoinController: UIViewController {
     private let disposeBag = DisposeBag()
     private let coinKit: Kit
     private var coins = [Coin]()
+    private var mappings = [CoinMapping]()
+    let type: DataType
 
     private let tableView = UITableView(frame: .zero, style: .plain)
 
-    init(coinKit: Kit) {
+    init(coinKit: Kit, type: DataType) {
         self.coinKit = coinKit
+        self.type = type
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -23,7 +31,7 @@ class CoinController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Coins"
+        title = type == .coins ? "Coins" : "Mappings"
 
         view.addSubview(tableView)
         tableView.snp.makeConstraints { maker in
@@ -42,7 +50,7 @@ class CoinController: UIViewController {
 
     private func initCoins() {
         coins = Array(coinKit.coins.prefix(100))
-
+        mappings = Array(coinKit.mappings.prefix(100))
         tableView.reloadData()
     }
 
@@ -51,7 +59,11 @@ class CoinController: UIViewController {
 extension CoinController: UITableViewDataSource, UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        coins.count
+        if type == .coins {
+            return coins.count
+        } else {
+            return mappings.count
+        }
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,11 +79,19 @@ extension CoinController: UITableViewDataSource, UITableViewDelegate {
             return
         }
 
-        let coin = coins[indexPath.row]
+        if type == .coins {
+            let coin = coins[indexPath.row]
 
-        cell.topTitle = coin.id
-        cell.middleTitle = coin.title
-        cell.bottomTitle = coin.code
+            cell.topTitle = coin.id
+            cell.middleTitle = coin.title
+            cell.bottomTitle = coin.code
+        } else {
+            let mapping = mappings[indexPath.row]
+            cell.topTitle = mapping.coinType
+            cell.middleTitle = mapping.mirrorCoinId
+            cell.bottomTitle = mapping.coinId
+        }
+
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

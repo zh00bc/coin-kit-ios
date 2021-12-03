@@ -51,6 +51,9 @@ extension Kit {
         (try? CoinProvider(parser: JsonParser(), testNet: testNet).defaultCoins().coins) ?? []
     }
 
+    public static func defaultMappings(testNet: Bool) -> [CoinMapping] {
+        (try? MappingProvider(parser: JsonParser(), testNet: testNet).defaultMappings().mappings) ?? []
+    }
 }
 
 extension Kit {
@@ -59,7 +62,8 @@ extension Kit {
         let storage = try GrdbStorage(databaseDirectoryUrl: databaseDirectoryUrl(), databaseFileName: "coin-kit-db")
 
         let coinProvider = CoinProvider(parser: JsonParser(), testNet: testNet)
-        let coinManager = CoinManager(coinProvider: coinProvider, storage: storage)
+        let mappingProvider = MappingProvider(parser: JsonParser(), testNet: testNet)
+        let coinManager = CoinManager(coinProvider: coinProvider, mappingProvider: mappingProvider, storage: storage)
 
         return Kit(coinManager: coinManager, storage: storage)
     }
@@ -70,6 +74,10 @@ extension Kit {
 
     public var coins: [Coin] {
         coinManager.coins
+    }
+    
+    public var mappings: [CoinMapping] {
+        coinManager.mappings
     }
 
     public func save(coins: [Coin]) {
@@ -84,4 +92,11 @@ extension Kit {
         coinManager.coin(id: type.id)
     }
 
+    public func save(mappings: [CoinMapping]) {
+        coinManager.save(mappings: mappings)
+    }
+    
+    public func mapping(coinId: String) -> CoinMapping? {
+        coinManager.mapping(coinId: coinId)
+    }
 }

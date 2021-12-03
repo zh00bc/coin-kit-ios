@@ -9,11 +9,16 @@ class MainController: UITabBarController {
 
         super.init(nibName: nil, bundle: nil)
 
-        let coinController = CoinController(coinKit: coinKit)
+        let coinController = CoinController(coinKit: coinKit, type: .coins)
         coinController.tabBarItem = UITabBarItem(title: "Coins", image: UIImage(systemName: "dollarsign.circle"), tag: 0)
+        
+        let mappingController = CoinController(coinKit: coinKit, type: .mappings)
+        mappingController.tabBarItem = UITabBarItem(title: "Mappings", image: UIImage(systemName: "dollarsign.circle"), tag: 0)
+
 
         viewControllers = [
             UINavigationController(rootViewController: coinController),
+            UINavigationController(rootViewController: mappingController)
         ]
     }
 

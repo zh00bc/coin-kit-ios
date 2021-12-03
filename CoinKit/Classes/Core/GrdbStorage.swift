@@ -38,12 +38,32 @@ class GrdbStorage {
                 t.primaryKey([Coin.Columns.id.name], onConflict: .replace)
             }
         }
+        
+        migrator.registerMigration("createMappings") { db in
+            try db.create(table: CoinMapping.databaseTableName, body: { t in
+                t.column(CoinMapping.Columns.coinId.name, .text).notNull()
+                t.column(CoinMapping.Columns.coinType.name, .text).notNull()
+                t.column(CoinMapping.Columns.chainType.name, .text).notNull()
+                t.column(CoinMapping.Columns.mirrorCoinId.name, .text)
+                t.column(CoinMapping.Columns.taylorContractAddress.name, .text)
+                t.column(CoinMapping.Columns.crossRegion.name, .boolean).notNull()
+                t.column(CoinMapping.Columns.crossChain.name, .boolean).notNull()
+                
+                t.primaryKey([CoinMapping.Columns.coinId.name], onConflict: .replace)
+            })
+        }
 
         return migrator
     }
 }
 
 extension GrdbStorage: ICoinStorage {
+    
+    var mappings: [CoinMapping] {
+        try! dbPool.read { db in
+            try CoinMapping.fetchAll(db)
+        }
+    }
 
     var coins: [Coin] {
         try! dbPool.read { db in
@@ -72,10 +92,40 @@ extension GrdbStorage: ICoinStorage {
             }
         }
     }
+    
+    var defaultMappingVersion: Int? {
+        get {
+            try! dbPool.read { db in
+                try ResponseVersion
+                        .filter(ResponseVersion.Columns.id == String(describing: CoinMapping.self))
+                        .fetchOne(db)?
+                        .version
+            }
+        }
+        set {
+            _ = try! dbPool.write { db in
+                guard let version = newValue else {
+                    try ResponseVersion
+                            .filter(ResponseVersion.Columns.id == String(describing: CoinMapping.self))
+                            .deleteAll(db)
+                    return
+                }
+                try ResponseVersion(id: String(describing: CoinMapping.self), version: version).insert(db)
+            }
+        }
+    }
 
     func save(coins: [Coin]) {
         _ = try! dbPool.write { db in
             try coins.forEach { record in
+                try record.insert(db)
+            }
+        }
+    }
+    
+    func save(mappings: [CoinMapping]) {
+        _ = try! dbPool.write { db in
+            try mappings.forEach { record in
                 try record.insert(db)
             }
         }
@@ -90,4 +140,12 @@ extension GrdbStorage: ICoinStorage {
         }
     }
 
+    func mapping(coinId: String) -> CoinMapping? {
+        try! dbPool.read { db in
+            let mapping = try CoinMapping
+                .filter(CoinMapping.Columns.coinId == coinId)
+                .fetchOne(db)
+            return mapping
+        }
+    }
 }
