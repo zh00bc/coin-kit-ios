@@ -14,12 +14,12 @@ public class CoinMapping: Record, ImmutableMappable {
     public let coinId: String
     public let name: String
     public let chainType: String
-    public let mirrorCoinId: String?
+    public let mirrorCoinId: String
     public let taylorContractAddress: String
     public let crossRegion: Bool
     public let crossChain: Bool
 
-    public init(coinId: String, name: String, chainType: String, mirrorCoinId: String?, taylorContractAddress: String, crossRegion: Bool, crossChain: Bool) {
+    public init(coinId: String, name: String, chainType: String, mirrorCoinId: String, taylorContractAddress: String, crossRegion: Bool, crossChain: Bool) {
         self.coinId = coinId
         self.name = name
         self.chainType = chainType
