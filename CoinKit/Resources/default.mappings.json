@@ -8,7 +8,7 @@
             "coinId":"tl",
             "taylorContractAddress":"0tk4QtU4t3fSZ4YdmXHziVMV5B91tTNfG8CuA4ViyBq",
             "crossRegion": true,
-            "crossChain": true
+            "crossChain": false
         },
         {
             "chainType":"eth",
