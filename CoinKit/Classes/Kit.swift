@@ -99,4 +99,8 @@ extension Kit {
     public func mapping(coinId: String) -> CoinMapping? {
         coinManager.mapping(coinId: coinId)
     }
+    
+    public func mapping(taylorContractAddress: String) -> CoinMapping? {
+        coinManager.mapping(taylorContractAddress: taylorContractAddress)
+    }
 }

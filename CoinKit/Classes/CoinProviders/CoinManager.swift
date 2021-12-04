@@ -86,6 +86,10 @@ extension CoinManager {
     func mapping(coinId: String) -> CoinMapping? {
         storage.mapping(coinId: coinId)
     }
+    
+    func mapping(taylorContractAddress: String) -> CoinMapping? {
+        storage.mapping(taylorContractAddress: taylorContractAddress)
+    }
 
     func save(coins: [Coin]) {
         storage.save(coins: coins)

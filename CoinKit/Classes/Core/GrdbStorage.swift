@@ -45,7 +45,7 @@ class GrdbStorage {
                 t.column(CoinMapping.Columns.name.name, .text).notNull()
                 t.column(CoinMapping.Columns.chainType.name, .text).notNull()
                 t.column(CoinMapping.Columns.mirrorCoinId.name, .text)
-                t.column(CoinMapping.Columns.taylorContractAddress.name, .text)
+                t.column(CoinMapping.Columns.taylorContractAddress.name, .text).notNull(onConflict: .replace)
                 t.column(CoinMapping.Columns.crossRegion.name, .boolean).notNull()
                 t.column(CoinMapping.Columns.crossChain.name, .boolean).notNull()
                 
@@ -144,6 +144,15 @@ extension GrdbStorage: ICoinStorage {
         try! dbPool.read { db in
             let mapping = try CoinMapping
                 .filter(CoinMapping.Columns.coinId == coinId)
+                .fetchOne(db)
+            return mapping
+        }
+    }
+    
+    func mapping(taylorContractAddress: String) -> CoinMapping? {
+        try! dbPool.read { db in
+            let mapping = try CoinMapping
+                .filter(CoinMapping.Columns.taylorContractAddress == taylorContractAddress)
                 .fetchOne(db)
             return mapping
         }
