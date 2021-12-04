@@ -82,7 +82,7 @@ extension Coin: Hashable {
 extension Coin: Equatable {
 
     public static func ==(lhs: Coin, rhs: Coin) -> Bool {
-        lhs.id == rhs.id && lhs.title == rhs.title && lhs.code == rhs.code && lhs.decimal == rhs.decimal && lhs.type == rhs.type
+        lhs.id == rhs.id && lhs.code == rhs.code && lhs.decimal == rhs.decimal && lhs.type == rhs.type
     }
 
 }
