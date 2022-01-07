@@ -38,6 +38,15 @@
             "crossChain": true
         },
         {
+            "chainType":"btc",
+            "mirrorCoinId":"8cd7f91f34204c13828d28a71777ad391",
+            "name":"USDT-OMNI",
+            "coinId":"omni|31",
+            "taylorContractAddress":"0tJrFSaa7D2XRBrc4eReCojDKdVH2E6SmikuGm8Jy7S1",
+            "crossRegion": true,
+            "crossChain": true
+        },
+        {
             "chainType":"eth",
             "mirrorCoinId":"12bdff663f854d17a8f8c791f033bce1",
             "name":"ETH",
