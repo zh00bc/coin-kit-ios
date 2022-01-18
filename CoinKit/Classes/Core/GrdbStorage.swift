@@ -39,6 +39,14 @@ class GrdbStorage {
             }
         }
         
+        migrator.registerMigration("addRecommendColumn") { db in
+            try db.alter(table: Coin.databaseTableName, body: { t in
+                t.add(column: Coin.Columns.recommend.name, .boolean)
+                t.add(column: Coin.Columns.sort.name, .integer)
+                t.add(column: Coin.Columns.icon.name, .text)
+            })
+        }
+        
         migrator.registerMigration("createMappings") { db in
             try db.create(table: CoinMapping.databaseTableName, body: { t in
                 t.column(CoinMapping.Columns.coinId.name, .text).notNull()
