@@ -45,6 +45,12 @@
             "type": "dash"
         },
         {
+            "title": "Binance Smart Chain",
+            "code": "BNB",
+            "decimal": 18,
+            "type": "binanceSmartChain"
+        },
+        {
             "title": "Binance Chain",
             "code": "BNB",
             "decimal": 8,
