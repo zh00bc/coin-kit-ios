@@ -347,6 +347,14 @@
             "type": "tlc20",
             "address": "0tUdTCiN99kAx2w8Cdtsrf1FzDYhqizM38MoH6wkvv5",
             "mainId": "litecoin"
+        },
+        {
+            "title": "Binance Smart Chain",
+            "code": "BNB",
+            "decimal": 18,
+            "type": "tlc20",
+            "address": "0tR6XBrcYsPVBZyR2NdLEBXm9Lh2eMNNtZjNP6AXT8Z",
+            "mainId": "binanceSmartChain"
         }
     ]
 }
