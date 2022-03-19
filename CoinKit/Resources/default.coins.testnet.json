@@ -1,5 +1,5 @@
 {
-    "version": 4,
+    "version": 5,
     "coins": [
         {
             "title": "Bitcoin",
@@ -55,7 +55,7 @@
             "code": "USDT",
             "decimal": 18,
             "type": "bep20",
-            "address": "0x55d398326f99059fF775485246999027B3197955"
+            "address": "0x55d398326f99059ff775485246999027b3197955"
         },
         {
             "title": "Binance Chain",
@@ -150,6 +150,14 @@
             "type": "tlc20",
             "address": "0tEX27npCqTVUEFY5wCxx1FfDPTzzoyP1p66nLToRdB",
             "mainId": "erc20|0xdac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        {
+            "title": "USDT-BEP20",
+            "code": "USDT",
+            "decimal": 18,
+            "type": "tlc20",
+            "address": "0tJkYkbnhaNNBrDYAopzrphegKYV91E5gJ8SQScDWPs",
+            "mainId": "bep20|0x55d398326f99059ff775485246999027b3197955"
         },
         {
             "title": "Litecoin",

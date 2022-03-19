@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 3,
     "mappings":[
         {
             "chainType":"tl",
@@ -74,11 +74,20 @@
             "crossChain": true
         },
         {
-            "chainType":"binanceSmartChain",
+            "chainType":"bsc",
             "mirrorCoinId":"69808315c588dd40c2386a53c9dcb977",
             "name":"BNB",
             "coinId":"binanceSmartChain",
             "taylorContractAddress":"0tR6XBrcYsPVBZyR2NdLEBXm9Lh2eMNNtZjNP6AXT8Z",
+            "crossRegion": true,
+            "crossChain": true
+        },
+        {
+            "chainType":"bsc",
+            "mirrorCoinId":"6496fb262c064e56ac09074f4be6809f",
+            "name":"USDT-BEP20",
+            "coinId":"bep20|0x55d398326f99059ff775485246999027b3197955",
+            "taylorContractAddress":"0tJkYkbnhaNNBrDYAopzrphegKYV91E5gJ8SQScDWPs",
             "crossRegion": true,
             "crossChain": true
         }
