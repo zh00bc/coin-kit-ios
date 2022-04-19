@@ -33,18 +33,6 @@
             "type": "tron"
         },
         {
-            "title": "Bitcoin Cash",
-            "code": "BCH",
-            "decimal": 8,
-            "type": "bitcoinCash"
-        },
-        {
-            "title": "Dash",
-            "code": "DASH",
-            "decimal": 8,
-            "type": "dash"
-        },
-        {
             "title": "Binance Smart Chain",
             "code": "BNB",
             "decimal": 18,
@@ -63,12 +51,6 @@
             "decimal": 8,
             "type": "bep2",
             "symbol": "BNB"
-        },
-        {
-            "title": "Zcash",
-            "code": "ZEC",
-            "decimal": 8,
-            "type": "zcash"
         },
         {
             "title": "Dai",
