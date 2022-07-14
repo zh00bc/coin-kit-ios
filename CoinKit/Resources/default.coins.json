@@ -345,13 +345,6 @@
             "type": "tlc20",
             "address": "0tR6XBrcYsPVBZyR2NdLEBXm9Lh2eMNNtZjNP6AXT8Z",
             "mainId": "binanceSmartChain"
-        },
-        {
-            "title": "FTH",
-            "code": "FTH",
-            "decimal": 18,
-            "type": "bep20",
-            "address": "0xeE36aF3203521CBcBD2d7d6884F757927Fd24223",
         }
     ]
 }
