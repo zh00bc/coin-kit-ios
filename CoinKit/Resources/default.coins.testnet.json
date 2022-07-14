@@ -43,7 +43,7 @@
             "code": "USDT",
             "decimal": 18,
             "type": "bep20",
-            "address": "0x55d398326f99059ff775485246999027b3197955"
+            "address": "0x4ad30990ea0a97a1f4ee67c49f98e6cb2e9ceec9"
         },
         {
             "title": "Binance Chain",
