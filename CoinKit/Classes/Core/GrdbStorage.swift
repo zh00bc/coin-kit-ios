@@ -60,6 +60,18 @@ class GrdbStorage {
                 t.primaryKey([CoinMapping.Columns.coinId.name], onConflict: .replace)
             })
         }
+        
+        migrator.registerMigration("delete tl") { db in
+            try Coin.filter(Coin.Columns.id == "tl").deleteAll(db)
+        }
+        
+        migrator.registerMigration("delete tlc20") { db in
+            try Coin.filter(Coin.Columns.id.like("tlc20%")).deleteAll(db)
+        }
+        
+        migrator.registerMigration("delete unsupported") { db in
+            try Coin.filter(Coin.Columns.id.like("unsupported%")).deleteAll(db)
+        }
 
         return migrator
     }

@@ -74,7 +74,7 @@ extension CoinType: Identifiable {
             case "dash": self = .dash
             case "ethereum": self = .ethereum
             case "tron": self = .tron
-            case "tl": self = .tl
+            case "ftc": self = .tl
             case "zcash": self = .zcash
             case "binanceSmartChain": self = .binanceSmartChain
             default: self = .unsupported(id: String(chunks[0]))
@@ -83,7 +83,7 @@ extension CoinType: Identifiable {
             switch chunks[0] {
             case "erc20": self = .erc20(address: String(chunks[1]))
             case "trc20": self = .trc20(address: String(chunks[1]))
-            case "tlc20": self = .tlc20(address: String(chunks[1]))
+            case "frc20": self = .tlc20(address: String(chunks[1]))
             case "bep2": self = .bep2(symbol: String(chunks[1]))
             case "bep20": self = .bep20(address: String(chunks[1]))
             case "omni": self = .omni(address: String(chunks[1]))
@@ -102,10 +102,10 @@ extension CoinType: Identifiable {
         case .ethereum: return "ethereum"
         case .zcash: return "zcash"
         case .tron: return "tron"
-        case .tl: return "tl"
+        case .tl: return "ftc"
         case .erc20(let address): return ["erc20", address].joined(separator: "|")
         case .trc20(let address): return ["trc20", address].joined(separator: "|")
-        case .tlc20(let address): return ["tlc20", address].joined(separator: "|")
+        case .tlc20(let address): return ["frc20", address].joined(separator: "|")
         case .omni(let address): return ["omni", address].joined(separator: "|")
         case .binanceSmartChain: return "binanceSmartChain"
         case .bep2(let symbol): return ["bep2", symbol].joined(separator: "|")
